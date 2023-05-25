@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<center>
+    <div>
+        <h1>The result of The Kurylo clinic</h1>
+        <hr/>
+        <img src="{{ url_for('static', filename=image_name) }}" alt="Uploaded Image" height="450px" width="600px">
+        <hr/>
+        <h2>Diagnos is: {{ diagnos }}</h2>
+        <hr/>
+        <a href="{{ url_for('upload_image') }}">Go Back</a>
+    </div>
+</center>
+</body>
+</html>
